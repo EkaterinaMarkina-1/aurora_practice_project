@@ -1,0 +1,11 @@
+name: ffi_plugin
+description: FFI bindings for TFLite plugin
+headers:
+  entry-points:
+    - src/ffi_plugin.h
+output: lib/ffi_plugin_bindings_generated.dart
+compiler-opts:
+  # путь к заголовкам TFLite
+  - -Iplugins/ffi_plugin/tflite_c/include
+  # путь к src
+  - -Isrc
