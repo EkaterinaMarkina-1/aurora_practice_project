@@ -43,3 +43,11 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+tensorflow/
+tensorflow/
+build/
+.dart_tool/
+*.rpm
+*.so
+*.dill
+*.snapshot
