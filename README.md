@@ -2,15 +2,23 @@
 
 A new Flutter project.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+aurora_practice_project/
+├── lib/ # Dart исходники
+├── aurora/ # Конфигурация для ОС Аврора
+├── plugins/ # Нативные плагины
+│ └── ffi_plugin/ # FFI-плагин на C++
+│ ├── lib/ # Dart API плагина
+│ ├── src/ # Исходники C++
+│ │ ├── ffi_plugin.cpp
+│ │ └── ffi_plugin.h
+│   └── CMakeLists.txt # Сборка плагина
+├── assets/
+│ └── models/ # TFLite модели
+│ ├── model_float32.tflite
+│ ├── model_float16.tflite
+│ └── model_int8.tflite
+├── tflite_c/ # TensorFlow Lite C
+│ ├── include/ # Заголовочные файлы
+│ └── lib/ # Библиотеки
+├── build/ # Сборка (игнорируется git)
+└── tensorflow/ # Исходники TF (игнорируется git)
